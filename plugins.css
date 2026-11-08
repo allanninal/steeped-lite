@@ -1,0 +1,9 @@
+
+/* Optional plugins. Their own settings decide colours, shapes and position: the
+   theme passes on its font and keeps the footer clear, nothing more. */
+.cky-consent-container .cky-consent-bar,
+.cky-consent-container .cky-btn,
+.trp-language-switcher.trp-floating-switcher { font-family: inherit; }
+/* Both float over the page's last lines: leave them room under the footer. */
+body:has(.cky-btn-revisit-wrapper, .trp-floating-switcher) .site-footer { padding-block-end: 4.5rem; }
+.woo-variation-swatches .variable-items-wrapper .variable-item:focus-visible { outline: 2px solid var(--wp--preset--color--accent-dark); outline-offset: 2px; }
