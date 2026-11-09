@@ -102,6 +102,9 @@ ob_start();
 <!-- /wp:group -->
 </div>
 <!-- /wp:group -->
+<!-- wp:paragraph {"placeholder":"Open now status (filled in from the hours above)","className":"is-style-open-status"} -->
+<p class="is-style-open-status"></p>
+<!-- /wp:paragraph -->
 </div>
 <!-- /wp:column -->
 <!-- wp:column {"width":"45%","verticalAlignment":"center"} -->

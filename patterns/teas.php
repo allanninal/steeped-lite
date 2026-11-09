@@ -76,7 +76,10 @@ ob_start();
 </div>
 <!-- /wp:group -->
 <!-- wp:paragraph {"className":"st-muted st-brew"} -->
-<p class="st-muted st-brew"><?php echo wp_kses_post( __( 'Steep: <strong>2 min</strong> · Temp: <strong>75°C</strong>', 'steeped-lite' ) ); ?></p>
+<p class="st-muted st-brew"><?php echo wp_kses_post( __( 'Water <strong>75°C / 167°F</strong> · Steep <strong>2 min</strong> · Leaf <strong>3 g</strong> per cup · Re-steep <strong>3×</strong>', 'steeped-lite' ) ); ?></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"st-caffeine is-medium"} -->
+<p class="st-caffeine is-medium"><?php echo esc_html__( 'Medium caffeine', 'steeped-lite' ); ?></p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -119,7 +122,10 @@ ob_start();
 </div>
 <!-- /wp:group -->
 <!-- wp:paragraph {"className":"st-muted st-brew"} -->
-<p class="st-muted st-brew"><?php echo wp_kses_post( __( 'Steep: <strong>2 min</strong> · Temp: <strong>60°C</strong>', 'steeped-lite' ) ); ?></p>
+<p class="st-muted st-brew"><?php echo wp_kses_post( __( 'Water <strong>60°C / 140°F</strong> · Steep <strong>2 min</strong> · Leaf <strong>5 g</strong> per cup · Re-steep <strong>3×</strong>', 'steeped-lite' ) ); ?></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"st-caffeine is-high"} -->
+<p class="st-caffeine is-high"><?php echo esc_html__( 'High caffeine', 'steeped-lite' ); ?></p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -162,7 +168,10 @@ ob_start();
 </div>
 <!-- /wp:group -->
 <!-- wp:paragraph {"className":"st-muted st-brew"} -->
-<p class="st-muted st-brew"><?php echo wp_kses_post( __( 'Steep: <strong>1.5 min</strong> · Temp: <strong>70°C</strong>', 'steeped-lite' ) ); ?></p>
+<p class="st-muted st-brew"><?php echo wp_kses_post( __( 'Water <strong>70°C / 158°F</strong> · Steep <strong>1.5 min</strong> · Leaf <strong>3 g</strong> per cup · Re-steep <strong>3×</strong>', 'steeped-lite' ) ); ?></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"st-caffeine is-medium"} -->
+<p class="st-caffeine is-medium"><?php echo esc_html__( 'Medium caffeine', 'steeped-lite' ); ?></p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -219,7 +228,10 @@ ob_start();
 </div>
 <!-- /wp:group -->
 <!-- wp:paragraph {"className":"st-muted st-brew"} -->
-<p class="st-muted st-brew"><?php echo wp_kses_post( __( 'Steep: <strong>3 min</strong> · Temp: <strong>90°C</strong>', 'steeped-lite' ) ); ?></p>
+<p class="st-muted st-brew"><?php echo wp_kses_post( __( 'Water <strong>90°C / 194°F</strong> · Steep <strong>3 min</strong> · Leaf <strong>2.5 g</strong> per cup', 'steeped-lite' ) ); ?></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"st-caffeine is-medium"} -->
+<p class="st-caffeine is-medium"><?php echo esc_html__( 'Medium caffeine', 'steeped-lite' ); ?></p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -262,7 +274,10 @@ ob_start();
 </div>
 <!-- /wp:group -->
 <!-- wp:paragraph {"className":"st-muted st-brew"} -->
-<p class="st-muted st-brew"><?php echo wp_kses_post( __( 'Steep: <strong>3 min</strong> · Temp: <strong>95°C</strong>', 'steeped-lite' ) ); ?></p>
+<p class="st-muted st-brew"><?php echo wp_kses_post( __( 'Water <strong>95°C / 203°F</strong> · Steep <strong>3 min</strong> · Leaf <strong>3 g</strong> per cup', 'steeped-lite' ) ); ?></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"st-caffeine is-high"} -->
+<p class="st-caffeine is-high"><?php echo esc_html__( 'High caffeine', 'steeped-lite' ); ?></p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -305,7 +320,10 @@ ob_start();
 </div>
 <!-- /wp:group -->
 <!-- wp:paragraph {"className":"st-muted st-brew"} -->
-<p class="st-muted st-brew"><?php echo wp_kses_post( __( 'Steep: <strong>4 min</strong> · Temp: <strong>95°C</strong>', 'steeped-lite' ) ); ?></p>
+<p class="st-muted st-brew"><?php echo wp_kses_post( __( 'Water <strong>95°C / 203°F</strong> · Steep <strong>4 min</strong> · Leaf <strong>3 g</strong> per cup', 'steeped-lite' ) ); ?></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"st-caffeine is-medium"} -->
+<p class="st-caffeine is-medium"><?php echo esc_html__( 'Medium caffeine', 'steeped-lite' ); ?></p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -362,7 +380,10 @@ ob_start();
 </div>
 <!-- /wp:group -->
 <!-- wp:paragraph {"className":"st-muted st-brew"} -->
-<p class="st-muted st-brew"><?php echo wp_kses_post( __( 'Steep: <strong>3 min</strong> · Temp: <strong>85°C</strong>', 'steeped-lite' ) ); ?></p>
+<p class="st-muted st-brew"><?php echo wp_kses_post( __( 'Water <strong>85°C / 185°F</strong> · Steep <strong>3 min</strong> · Leaf <strong>4 g</strong> per cup · Re-steep <strong>5×</strong>', 'steeped-lite' ) ); ?></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"st-caffeine is-medium"} -->
+<p class="st-caffeine is-medium"><?php echo esc_html__( 'Medium caffeine', 'steeped-lite' ); ?></p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -405,7 +426,10 @@ ob_start();
 </div>
 <!-- /wp:group -->
 <!-- wp:paragraph {"className":"st-muted st-brew"} -->
-<p class="st-muted st-brew"><?php echo wp_kses_post( __( 'Steep: <strong>3 min</strong> · Temp: <strong>90°C</strong>', 'steeped-lite' ) ); ?></p>
+<p class="st-muted st-brew"><?php echo wp_kses_post( __( 'Water <strong>90°C / 194°F</strong> · Steep <strong>3 min</strong> · Leaf <strong>4 g</strong> per cup · Re-steep <strong>5×</strong>', 'steeped-lite' ) ); ?></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"st-caffeine is-medium"} -->
+<p class="st-caffeine is-medium"><?php echo esc_html__( 'Medium caffeine', 'steeped-lite' ); ?></p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -462,7 +486,10 @@ ob_start();
 </div>
 <!-- /wp:group -->
 <!-- wp:paragraph {"className":"st-muted st-brew"} -->
-<p class="st-muted st-brew"><?php echo wp_kses_post( __( 'Steep: <strong>5 min</strong> · Temp: <strong>100°C</strong>', 'steeped-lite' ) ); ?></p>
+<p class="st-muted st-brew"><?php echo wp_kses_post( __( 'Water <strong>100°C / 212°F</strong> · Steep <strong>5 min</strong> · Leaf <strong>3 g</strong> per cup', 'steeped-lite' ) ); ?></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"st-caffeine is-none"} -->
+<p class="st-caffeine is-none"><?php echo esc_html__( 'Caffeine-free', 'steeped-lite' ); ?></p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -505,7 +532,10 @@ ob_start();
 </div>
 <!-- /wp:group -->
 <!-- wp:paragraph {"className":"st-muted st-brew"} -->
-<p class="st-muted st-brew"><?php echo wp_kses_post( __( 'Steep: <strong>5 min</strong> · Temp: <strong>100°C</strong>', 'steeped-lite' ) ); ?></p>
+<p class="st-muted st-brew"><?php echo wp_kses_post( __( 'Water <strong>100°C / 212°F</strong> · Steep <strong>5 min</strong> · Leaf <strong>2 g</strong> per cup', 'steeped-lite' ) ); ?></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"st-caffeine is-none"} -->
+<p class="st-caffeine is-none"><?php echo esc_html__( 'Caffeine-free', 'steeped-lite' ); ?></p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -548,7 +578,10 @@ ob_start();
 </div>
 <!-- /wp:group -->
 <!-- wp:paragraph {"className":"st-muted st-brew"} -->
-<p class="st-muted st-brew"><?php echo wp_kses_post( __( 'Steep: <strong>5 min</strong> · Temp: <strong>100°C</strong>', 'steeped-lite' ) ); ?></p>
+<p class="st-muted st-brew"><?php echo wp_kses_post( __( 'Water <strong>100°C / 212°F</strong> · Steep <strong>5 min</strong> · Leaf <strong>3 g</strong> per cup', 'steeped-lite' ) ); ?></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"st-caffeine is-none"} -->
+<p class="st-caffeine is-none"><?php echo esc_html__( 'Caffeine-free', 'steeped-lite' ); ?></p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -602,7 +635,10 @@ ob_start();
 </div>
 <!-- /wp:group -->
 <!-- wp:paragraph {"className":"st-muted st-brew"} -->
-<p class="st-muted st-brew"><?php echo wp_kses_post( __( 'Steep: <strong>Whisked</strong> · Temp: <strong>70°C</strong>', 'steeped-lite' ) ); ?></p>
+<p class="st-muted st-brew"><?php echo wp_kses_post( __( 'Water <strong>70°C / 158°F</strong> · Method <strong>Whisked</strong> · Leaf <strong>2 g</strong> per bowl', 'steeped-lite' ) ); ?></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"st-caffeine is-high"} -->
+<p class="st-caffeine is-high"><?php echo esc_html__( 'High caffeine', 'steeped-lite' ); ?></p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -642,12 +678,21 @@ ob_start();
 </div>
 <!-- /wp:group -->
 <!-- wp:paragraph {"className":"st-muted st-brew"} -->
-<p class="st-muted st-brew"><?php echo wp_kses_post( __( 'Steep: <strong>Whisked</strong> · Temp: <strong>65°C</strong>', 'steeped-lite' ) ); ?></p>
+<p class="st-muted st-brew"><?php echo wp_kses_post( __( 'Water <strong>65°C / 149°F</strong> · Method <strong>Whisked</strong> · Leaf <strong>2 g</strong> per bowl', 'steeped-lite' ) ); ?></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"st-caffeine is-medium"} -->
+<p class="st-caffeine is-medium"><?php echo esc_html__( 'Medium caffeine', 'steeped-lite' ); ?></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"st-muted st-contains","fontSize":"small"} -->
+<p class="has-small-font-size st-muted st-contains"><?php echo wp_kses_post( __( '<strong>Contains:</strong> milk', 'steeped-lite' ) ); ?></p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
 </div>
 <!-- /wp:group -->
+<!-- wp:paragraph {"align":"center","fontSize":"small","className":"st-muted"} -->
+<p class="has-text-align-center has-small-font-size st-muted"><?php echo esc_html__( 'Caffeine varies with the leaf, how much you use, the water temperature and the steep time, so the level shown is a guide.', 'steeped-lite' ); ?></p>
+<!-- /wp:paragraph -->
 <!-- wp:paragraph {"align":"center","fontSize":"small","className":"st-muted st-allergens"} -->
 <p class="has-text-align-center has-small-font-size st-muted st-allergens"><?php echo esc_html__( 'Our kitchen handles wheat, oats, milk, eggs, fish, almonds and sesame, so we cannot promise any item is free of them, even those marked vegan or plant-based. Please tell us about any allergy when you book or order.', 'steeped-lite' ); ?></p>
 <!-- /wp:paragraph -->

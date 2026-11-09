@@ -142,6 +142,131 @@ h1, h2 { line-height: 1.12; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 .st-allergens { margin-top: 2.5rem; max-width: 46rem; margin-inline: auto; }
 
+/* Caffeine grade and Contains under each tea (free, from data/teas.ts). */
+.st-caffeine { display: inline-block; align-self: flex-start; font-size: 0.75rem; font-weight: 600; padding: 0.125rem 0.625rem; border-radius: 9999px; border: 1px solid var(--wp--preset--color--border-base); color: var(--wp--preset--color--text-strong); margin-block: 0.5rem 0; }
+.st-caffeine.is-none { border-color: var(--wp--preset--color--accent); color: var(--wp--preset--color--accent-dark); }
+.st-contains { margin-block: 0.25rem 0; }
+/* Brew guide page. */
+.st-steps { max-width: 48rem; margin-inline: auto !important; line-height: 1.6; }
+.st-guides { display: grid; gap: 1.5rem; max-width: 56rem; margin-inline: auto !important; }
+.st-guide__facts { gap: 0.75rem 1.25rem; padding-block: 1rem; border-block: 1px solid var(--wp--preset--color--border-base); }
+.st-guide__fact > * { margin: 0; }
+.st-guide__k { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--wp--preset--color--text-muted); }
+.st-guide__v { font-weight: 600; color: var(--wp--preset--color--text-strong); }
+/* Food shop extras (tools/skeleton-food/, themes with "food"). Block styles on core blocks. */
+
+/* Section edges: a wave, scallops or a zigzag in the section's own colour, hanging from its
+   bottom over the top of whatever comes next. Drawn as a strip below the section rather than
+   cut out of it: a cut-out shows whatever is behind, and on Double Scoop that was the page
+   colour, a pale scalloped line between two dark sections, whatever the margins were
+   (2026-11-07). Decorative only, so it ignores the pointer and is not announced. */
+.wp-block-group.is-style-edge-wave,
+.wp-block-group.is-style-edge-scallop,
+.wp-block-group.is-style-edge-zigzag {
+	--food-edge: 1.25rem;
+	position: relative;
+	z-index: 1;
+}
+.wp-block-group.is-style-edge-wave::after,
+.wp-block-group.is-style-edge-scallop::after,
+.wp-block-group.is-style-edge-zigzag::after {
+	content: "";
+	position: absolute;
+	inset-inline: 0;
+	top: calc(100% - 1px);
+	height: calc(var(--food-edge) + 1px);
+	background: inherit;
+	pointer-events: none;
+	-webkit-mask: var(--food-edge-shape) top left / calc(var(--food-edge) * 4) 100% repeat-x;
+	mask: var(--food-edge-shape) top left / calc(var(--food-edge) * 4) 100% repeat-x;
+}
+.wp-block-group.is-style-edge-wave { --food-edge-shape: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 20' preserveAspectRatio='none'%3E%3Cpath d='M0 0h80v10c-10 0-10 10-20 10S50 10 40 10 30 20 20 20 10 10 0 10z'/%3E%3C/svg%3E"); }
+.wp-block-group.is-style-edge-scallop { --food-edge-shape: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 10' preserveAspectRatio='none'%3E%3Cpath d='M0 0h40v0a10 10 0 0 1-20 0 10 10 0 0 1-20 0z'/%3E%3C/svg%3E"); --food-edge: 0.9rem; }
+.wp-block-group.is-style-edge-zigzag { --food-edge-shape: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 20' preserveAspectRatio='none'%3E%3Cpath d='M0 0h40L20 20z'/%3E%3C/svg%3E"); --food-edge: 0.9rem; }
+
+/* Textures: a quiet pattern behind a section, in its accent colour at low strength, on a
+   layer under the content so text keeps its contrast with the section colour. */
+.wp-block-group.is-style-texture-dots,
+.wp-block-group.is-style-texture-sprinkles { position: relative; isolation: isolate; }
+.wp-block-group.is-style-texture-dots::before,
+.wp-block-group.is-style-texture-sprinkles::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	pointer-events: none;
+	background: var(--wp--preset--color--accent);
+	opacity: 0.1;
+}
+.wp-block-group.is-style-texture-dots::before {
+	-webkit-mask: radial-gradient(circle, #000 1.5px, transparent 2px) 0 0 / 18px 18px;
+	mask: radial-gradient(circle, #000 1.5px, transparent 2px) 0 0 / 18px 18px;
+}
+.wp-block-group.is-style-texture-sprinkles::before {
+	opacity: 0.16;
+	-webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cg%3E%3Crect x='10' y='14' width='14' height='4' rx='2' transform='rotate(30 17 16)'/%3E%3Crect x='60' y='8' width='14' height='4' rx='2' transform='rotate(-40 67 10)'/%3E%3Crect x='96' y='40' width='14' height='4' rx='2' transform='rotate(70 103 42)'/%3E%3Crect x='30' y='60' width='14' height='4' rx='2' transform='rotate(-15 37 62)'/%3E%3Crect x='76' y='82' width='14' height='4' rx='2' transform='rotate(45 83 84)'/%3E%3Crect x='8' y='100' width='14' height='4' rx='2' transform='rotate(-60 15 102)'/%3E%3Crect x='52' y='106' width='14' height='4' rx='2' transform='rotate(10 59 108)'/%3E%3C/g%3E%3C/svg%3E") 0 0 / 120px 120px;
+	mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cg%3E%3Crect x='10' y='14' width='14' height='4' rx='2' transform='rotate(30 17 16)'/%3E%3Crect x='60' y='8' width='14' height='4' rx='2' transform='rotate(-40 67 10)'/%3E%3Crect x='96' y='40' width='14' height='4' rx='2' transform='rotate(70 103 42)'/%3E%3Crect x='30' y='60' width='14' height='4' rx='2' transform='rotate(-15 37 62)'/%3E%3Crect x='76' y='82' width='14' height='4' rx='2' transform='rotate(45 83 84)'/%3E%3Crect x='8' y='100' width='14' height='4' rx='2' transform='rotate(-60 15 102)'/%3E%3Crect x='52' y='106' width='14' height='4' rx='2' transform='rotate(10 59 108)'/%3E%3C/g%3E%3C/svg%3E") 0 0 / 120px 120px;
+}
+
+/* Menu board: one line per item, name, a dotted leader, the price. */
+.is-style-menu-board .menu-board__group + .menu-board__group { margin-block-start: var(--wp--preset--spacing--50, 2rem); }
+.is-style-menu-board .menu-board__row { gap: 0.5rem; align-items: baseline; margin-block: 0.35rem 0; }
+.is-style-menu-board .menu-board__name { display: flex; flex: 1 1 auto; align-items: baseline; margin: 0; min-width: 0; }
+.is-style-menu-board .menu-board__name::after {
+	content: "";
+	flex: 1 1 1.5rem;
+	min-width: 1.5rem;
+	margin-inline: 0.5rem 0;
+	border-block-end: 2px dotted currentColor;
+	opacity: 0.45;
+	transform: translateY(-0.3em);
+}
+.is-style-menu-board .menu-board__price { margin: 0; flex: none; font-variant-numeric: tabular-nums; font-weight: 600; }
+.is-style-menu-board .menu-board__chips { margin-block: 0.15rem 0; }
+
+/* Chips: a short list of tags as pills. Diet labels carry a mark, so the difference is
+   not colour alone. */
+.wp-block-list.is-style-chips { display: flex; flex-wrap: wrap; gap: 0.375rem; list-style: none; padding: 0; margin-block: 0.5rem 0; }
+.wp-block-list.is-style-chips li {
+	margin: 0;
+	padding: 0.15em 0.7em;
+	border: 1px solid currentColor;
+	border-radius: 999px;
+	font-size: 0.8125rem;
+	line-height: 1.5;
+}
+.wp-block-list.is-style-chips li.is-diet::before { content: "✓\00a0"; content: "✓\00a0" / ""; }
+
+/* Open now: empty (and hidden) until the script has read the hours. */
+.is-style-open-status:empty { display: none; }
+.is-style-open-status { display: flex; align-items: center; gap: 0.5em; font-weight: 600; }
+.is-style-open-status::before { content: ""; width: 0.6em; height: 0.6em; border-radius: 50%; background: currentColor; opacity: 0.5; flex: none; }
+.is-style-open-status[data-state="open"]::before { opacity: 1; background: var(--wp--preset--color--accent); }
+.editor-styles-wrapper .is-style-open-status:empty { display: flex; }
+
+/* Order cut-off: the script writes the line from the order-ahead rules; empty
+   (and hidden) when there are none. A line the owner typed stays as written
+   until the script can replace it. */
+.is-style-order-cutoff:empty { display: none; }
+.is-style-order-cutoff { font-weight: 600; }
+.editor-styles-wrapper .is-style-order-cutoff:empty { display: block; min-height: 1.5em; outline: 1px dashed currentColor; }
+
+/* Schedule: one item per time; the script marks what is out and what is next. */
+.wp-block-list.is-style-schedule { list-style: none; padding: 0; margin-block: 1rem 0; display: grid; gap: 0.5rem; }
+.wp-block-list.is-style-schedule li { margin: 0; padding: 0.75rem 1rem; border: 1px solid color-mix(in srgb, currentColor 25%, transparent); border-radius: 0.75rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.25rem 1rem; }
+.wp-block-list.is-style-schedule li[data-label]::after { content: attr(data-label); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; align-self: center; }
+.wp-block-list.is-style-schedule li[data-state="next"] { border-color: var(--wp--preset--color--accent); box-shadow: 0 0 0 2px color-mix(in srgb, var(--wp--preset--color--accent) 30%, transparent); }
+
+/* "Three ways to start" (tools/lib/food.mjs ladder): numbered cards, cheapest first. */
+.ladder-section { padding-block: clamp(2.5rem, 6vw, 4.5rem); }
+.ladder { gap: 1.25rem; }
+.ladder__step { border: 1px solid var(--wp--preset--color--border-base); border-radius: 0.75rem; padding: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; }
+.ladder__step > * { margin: 0 !important; }
+.ladder__step > .wp-block-buttons { margin-top: auto !important; padding-top: 0.5rem; }
+.ladder__n { width: 2rem; height: 2rem; border-radius: 9999px; display: grid; place-items: center; font-weight: 700; background: var(--wp--preset--color--accent); color: var(--wp--preset--color--bg); }
+.ladder__title { font-size: 1.25rem; }
+.ladder__price { font-weight: 700; font-variant-numeric: tabular-nums; }
+
 /* Journal cards and Contact Form 7. */
 .wp-block-post-template .wp-block-post-title a { text-decoration: none; }
 .wp-block-post-template .wp-block-post-date { font-size: 0.875rem; color: var(--wp--preset--color--text-muted); }
